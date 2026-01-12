@@ -1,15 +1,9 @@
 # inventory_app
-
-
-A simple inventory database with a Win32 GUI and an embedded SQLite database.
-
-## Build a Windows executable
-
 This project is a native Windows C++ application that builds into a single `.exe`.
 
 ### Prerequisites
 
-1. Install Visual Studio 2022 (Desktop development with C++) or the Build Tools.
+1. Install Visual Studio 2022 (Desktop development with C++) or the Build Tools, including the Windows SDK.
 2. Install [vcpkg](https://github.com/microsoft/vcpkg) and the static SQLite package:
 
    ```powershell
@@ -60,6 +54,10 @@ To validate on Windows, run the following steps on a Windows machine:
 
 1. Build the executable using the steps above.
 2. Run the application and verify you can:
+   - Enter Name, Part Number, NSN, Serial Number, and Quantity then click **Save**.
+   - Select a row to populate the fields and click **Update** to edit it.
+   - Select a row and click **Delete** to remove it.
+   - Search using any field and see matching results in the table.
    - Enter Name, Part Number, NSN, Serial Number, and Quantity then click **Save**.
    - Select a row to populate the fields and click **Update** to edit it.
    - Select a row and click **Delete** to remove it.
